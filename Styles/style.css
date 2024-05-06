@@ -193,7 +193,8 @@ footer .contact i {
 }
 
 p{
-    font-size: 0.7rem;
+    line-height: 2;
+    font-size: 1.2rem;
 }
 
 .btn{
@@ -207,6 +208,18 @@ p{
     color: var(--ancent-clr);
 }
 
+.underline {
+   position: relative;
+}
+
+.underline::before{
+   position: absolute;
+   content: "";
+   height: 4px;
+   width: 200%;
+   background: var(--ancent-clr);
+   bottom: 0;
+}
 
 .hero {
     height: calc(100vh - 100px);
@@ -223,8 +236,6 @@ p{
 }
 
 
-
-
 .hero .right {
     flex: 1;
 }
@@ -232,3 +243,23 @@ p{
 .hero .right img{
     max-width: 100%;
 }
+/* End of Home Hero */
+
+.message{
+    display: flex;
+    align-items: center;
+    padding-block: 40px;
+}
+
+.message .left{
+    flex-basis: 70%;
+}
+
+
+.message .right{
+    flex-basis: 30%;
+}
+.message .right img{
+    width: 100%;
+}
+

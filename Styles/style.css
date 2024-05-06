@@ -252,6 +252,9 @@ p{
 }
 
 .message .left{
+    display: grid;
+    gap: 1rem;
+    
     flex-basis: 70%;
 }
 
@@ -285,7 +288,7 @@ p{
     .navbar{
         padding: 40px;
     }
-    .hero{
+    .hero, .message{
         flex-direction: column;
         height: fit-content;
     }

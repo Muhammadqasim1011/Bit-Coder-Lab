@@ -196,6 +196,14 @@ footer .contact i {
     line-height: 1.2;
 }
 
+.center {
+    text-align: center;
+}
+
+.sz-2 {
+    font-size: 2rem;
+}
+
 p {
     line-height: 2;
     font-size: 1.2rem;
@@ -411,9 +419,10 @@ section {
 }
 
 /* End of Team Section */
-.one{
+.one {
     margin-top: 20px;
 }
+
 .mission-content {
     display: flex;
     align-items: center;
@@ -426,22 +435,27 @@ section {
     flex-grow: 0;
     max-width: 70%;
 }
+
 .mission-content .three {
     flex-basis: 30%;
     -webkit-box-flex: 0;
     flex-grow: 0;
     max-width: 30%;
 }
+
 /* End of Mission Section */
 
-.training-content{
+.training-content,
+.chose-content {
     display: flex;
     gap: 2rem;
     margin-top: 20px;
 }
 
 .training-content p,
-.training-content img {
+.training-content img,
+.chose-content img,
+.chose-content .multi-content {
     flex-basis: 50%;
     -webkit-box-flex: 0;
     flex-grow: 0;
@@ -449,7 +463,26 @@ section {
     object-fit: cover;
 }
 
-/* End of Traing Section */
+.multi-content {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.chose-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3rem;
+}
+
+.chose-item {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+
+/* End of Traing Section and Choose Section */
 
 @media (max-width:1280px) {
     .headings {
@@ -541,19 +574,26 @@ section {
     .team-grid {
         gap: 1rem;
     }
-    
-    .mission-content{
+
+    .mission-content {
         flex-direction: column;
     }
+
     .mission-content .two {
         flex-basis: 100%;
         max-width: 100%;
     }
-    .mission-content .three {
+
+    .mission-content .three,
+    .chose-content img,
+    .chose-content .multi-content {
         flex-basis: 100%;
         max-width: 100%;
     }
 
+    .chose-content {
+        flex-direction: column;
+    }
 }
 
 @media (max-width:768px) {
@@ -610,15 +650,16 @@ section {
         margin: auto;
     }
 
-    .training-content{
+    .training-content {
         flex-direction: column;
     }
+
     .training-content p,
     .training-content img {
         flex-basis: 100%;
         max-width: 100%;
     }
-    
+
 }
 
 @media (max-width:444px) {
@@ -628,5 +669,9 @@ section {
 
     .team-grid .team-content:last-child {
         display: none;
+    }
+
+    .chose-grid {
+        grid-template-columns: repeat(1, 1fr);
     }
 }

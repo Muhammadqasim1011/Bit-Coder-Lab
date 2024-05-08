@@ -17,6 +17,8 @@
 
     color: var(--light-clr);
     font-family: sans-serif;
+
+    border-radius: 7px;
 }
 
 body {
@@ -220,6 +222,10 @@ p {
     color: var(--ancent-clr);
 }
 
+.text-yellow{
+    color: #ffb300;
+}
+
 .underline {
     position: relative;
 }
@@ -315,7 +321,7 @@ section {
 }
 
 .service-item {
-    margin-top: 120px;
+    margin-top: 40px;
     background: var(--ancent2-clr);
     padding: 4.9rem 5rem 0;
     position: relative;
@@ -420,7 +426,7 @@ section {
 
 /* End of Team Section */
 .one {
-    margin-top: 20px;
+    margin-top: 40px;
 }
 
 .mission-content {
@@ -449,7 +455,7 @@ section {
 .chose-content {
     display: flex;
     gap: 2rem;
-    margin-top: 20px;
+    margin-top: 40px;
 }
 
 .training-content p,
@@ -480,9 +486,64 @@ section {
     align-items: center;
     gap: 1rem;
 }
-
-
 /* End of Traing Section and Choose Section */
+
+.tech-skill{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-evenly;
+}
+.tech-skill li{
+    border-bottom: 2px solid transparent;
+}
+
+.tech-skill{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    place-items: center;
+}
+
+li.bottom{
+    border-bottom: 2px solid var(--ancent-clr);
+}
+
+.tech-logos{
+    margin-top: 20px;
+}
+.tech-logos,
+.tech-logo{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.tech-logo{
+    flex-direction: column;
+    gap: 1rem;
+}
+.tech-logo img{
+    max-width: 100%;
+}
+
+/* End of Tech Section Styling */
+
+.blog-grid{
+    margin-top: 40px;
+    margin-bottom: 80px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    place-items: center;
+    gap: 2rem;
+}
+.blog-item{
+    background: var(--ancent2-clr);
+}
+.blog-item p{
+    padding: 0.3rem;
+}
+.blog-item img{
+    max-width: 100%;
+}
 
 @media (max-width:1280px) {
     .headings {
@@ -660,6 +721,10 @@ section {
         max-width: 100%;
     }
 
+    .blog-grid{
+        grid-template-columns: repeat(1, 1fr);
+    }
+
 }
 
 @media (max-width:444px) {
@@ -673,5 +738,8 @@ section {
 
     .chose-grid {
         grid-template-columns: repeat(1, 1fr);
+    }
+    .tech-skill li{
+        padding-inline: 8px;
     }
 }

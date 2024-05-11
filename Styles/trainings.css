@@ -8,7 +8,7 @@
 }
 
 .headings {
-    margin-block: 1rem;
+    margin-block: 1rem; 
 }
 
 .carosel-container {
@@ -21,13 +21,14 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 2rem;
-    align-items: center;
-    margin: 3rem 1rem 3rem;
+    align-items: start;
+    margin: 3rem 1rem 4rem;
 }
 
 .carosel-item img {
     width: 100%;
     max-width: 540px;
+    height: 400px;
     object-fit: cover;
     user-select: none;
 }
@@ -58,6 +59,19 @@
 .bx-chevron-right:hover {
     font-size: 4.9rem;
     right: -44px;
+}
+
+@media (max-width: 1280px) {
+    p {
+        line-height: 2;
+        font-size: 1.2rem;
+    }
+}
+@media (max-width: 1000px) {
+    p {
+        line-height: 2;
+        font-size: 1.0rem;
+    }
 }
 
 @media (max-width:770px) {

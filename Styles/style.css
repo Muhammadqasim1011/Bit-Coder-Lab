@@ -728,6 +728,9 @@ li.bottom{
         grid-template-columns: repeat(1, 1fr);
     }
 
+    .carosel-item{
+        grid-template-columns: 1fr;
+    }
 }
 
 @media (max-width:444px) {

@@ -1,3 +1,7 @@
 .team-grid .team-content:last-child {
     display: block;
 }
+
+.hero .right img{
+    aspect-ratio: 1;
+}

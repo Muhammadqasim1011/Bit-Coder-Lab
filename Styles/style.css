@@ -23,13 +23,13 @@
 
 body {
     background: var(--dark-clr);
-    max-width: 1499px;
-    margin: auto;
 }
 
 header {
     transition: all 1s;
     background: var(--dark-clr);
+    max-width: 1499px;
+    margin: auto;
 }
 
 .navbar {
@@ -146,6 +146,8 @@ footer {
 
 footer .footer {
     flex: 1;
+    max-width: 1499px;
+    margin: auto;
 }
 
 footer li {
@@ -191,6 +193,8 @@ footer .contact i {
 
 .wrapper {
     padding: 0 4rem;
+    max-width: 1499px;
+    margin: auto;
 }
 
 .headings {
@@ -316,7 +320,7 @@ section {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     text-align: center;
-    gap: 2rem;
+    gap: 4rem 2rem;
     margin-top: 80px;
 }
 

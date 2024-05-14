@@ -106,6 +106,10 @@
         font-size: 3rem;
         right: -7px;
     }
+    p {
+        line-height: 2;
+        font-size: 0.8rem;
+    }
 }
 
 

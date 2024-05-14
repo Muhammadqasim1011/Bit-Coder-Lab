@@ -1,0 +1,58 @@
+:root {
+    --dark-clr: #000;
+    --light-clr: #fff;
+
+    --ancent-clr: #038DCC;
+
+    --ancent2-clr: #031923;
+}
+
+.contact-contanier form{
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+}
+
+.grid-item {
+    border: 1px solid var(--ancent2-clr);
+    padding: 1rem;
+    min-width: 0px;
+    min-height: 0px;
+    display: flex;
+    align-items: center;
+    color: var(--light-clr);
+    background-color: var(--ancent2-clr);
+}
+
+.grid-item:hover,
+.grid-item:active{
+    border: 1px solid var(--ancent-clr);
+}
+
+::placeholder{
+    color: var(--ancent-clr);
+}
+
+textarea{
+    resize: none;
+    height: 80px;
+    overflow: hidden;
+    color: var(--ancent-clr);
+}
+
+.contact-contanier form input.full,
+.contact-contanier form textarea.full{
+    grid-column: 1 / 3;
+}
+
+input.btn{
+    border: none;
+}
+
+@media (max-width:770px) {
+    .contact-contanier form input,
+.contact-contanier form textarea{
+    grid-column: 1 / 3;
+}
+}

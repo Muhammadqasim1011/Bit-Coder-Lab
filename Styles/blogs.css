@@ -1,0 +1,38 @@
+:root {
+    --dark-clr: #000;
+    --light-clr: #fff;
+
+    --ancent-clr: #038DCC;
+
+    --ancent2-clr: #031923;
+}
+
+.blogs .blog-item{
+    background: var(--dark-clr) !important;
+}
+
+.blog-item img{
+    max-width: 180px;
+}
+
+.blogs{
+    display: flex;
+    flex-direction: column;
+    background: var(--dark-clr);
+    gap: 3rem;
+}
+
+.blogs .blog-item{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+@media (max-width:700px) {
+   .blogs .blog-item{
+    flex-direction: column;
+   }
+   .blog-item img{
+    max-width: 200px;
+}
+}

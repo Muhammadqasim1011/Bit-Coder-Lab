@@ -550,6 +550,10 @@ li.bottom{
     max-width: 100%;
 }
 
+button i{
+    font-size: 1.4rem;
+}
+
 @media (max-width:1280px) {
     .headings {
         font-size: 2.3rem;
